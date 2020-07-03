@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FlightPayment"
+    >
+    <androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/flight_dashboard"
+        >
+
+        <ImageView
+            android:layout_width="161dp"
+            android:layout_height="161dp"
+            android:layout_gravity="center"
+
+            android:src="@drawable/cash"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:inputType="text"
+            android:text="Welcome To Payment"
+            android:layout_gravity="center"
+            android:textColor="#70FF0000"
+            android:textSize="29sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:hint="Card Holder Name"
+            android:id="@+id/cardholdername"
+            android:inputType="textPersonName"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:hint="Card Number"
+            android:id="@+id/number"
+            android:inputType="number"
+            android:maxLength="16"
+            android:textSize="20dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:hint="CVV"
+            android:inputType="numberPassword"
+            android:maxLength="3"
+            android:id="@+id/cvv"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:hint="Expiration Date"
+            android:id="@+id/expiry"
+            android:textSize="20dp"
+            android:maxLength="5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:hint="Total Amount"
+            android:id="@+id/amount"
+            android:textSize="20dp"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Submit"
+            android:id="@+id/submit"
+            android:onClick="onSubmit"
+            android:background="#70FF0000"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

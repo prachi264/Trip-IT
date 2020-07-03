@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!--clientGroup-->
+
+        <LinearLayout
+            android:id="@+id/clientIdGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/clientIDTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="120dp"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:width="120dp"
+                android:text="@string/setting_heading" />
+
+
+        </LinearLayout>
+        <!--Server Group-->
+        <LinearLayout
+            android:id="@+id/serverGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/clientIdGroup"
+            >
+
+            <TextView
+                android:id="@+id/serverTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:textSize="18dp"
+                android:textColor="#ffffff"
+                android:width="120dp"
+                android:text="@string/hotel_id" />
+
+            <AutoCompleteTextView
+                android:id="@+id/serverURI"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.13"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/default_address"
+
+                android:textColor="#ffffff" />
+        </LinearLayout>
+        <!-- Port Group-->
+        <LinearLayout
+            android:id="@+id/portGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/serverGroup" >
+
+            <TextView
+                android:id="@+id/portTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:width="120dp"
+                android:textColor="#ffffff"
+                android:text="@string/flight_id" />
+
+            <EditText
+                android:id="@+id/port"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.06"
+                android:ems="10"
+                android:inputType="number"
+                android:text="@string/default_address"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+        <!--Topic Subscribe Group-->
+        <LinearLayout
+            android:id="@+id/TopicGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+
+            android:layout_below="@id/portGroup" >
+
+            <TextView
+                android:id="@+id/TopicTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:text="@string/cab_id"
+                android:textColor="#ffffff"
+                android:width="120dp"
+                android:textSize="17dp"
+                />
+
+            <EditText
+                android:id="@+id/TopicET"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textColor="#fff"
+                android:text="@string/default_address"
+                android:inputType="text"
+                android:textColorHint="#EEE0E5"
+                />
+        </LinearLayout>
+        <!--Publish Topic Group(Send Group )-->
+
+        <LinearLayout
+            android:id="@+id/sendGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TopicGroup"
+            android:layout_marginTop="25dp"
+            >
+
+            <TextView
+                android:id="@+id/msgTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="20dp"
+                android:textSize="17dp"
+                android:width="120dp"
+                android:textColor="#ffffff"
+                android:text="Port No" />
+
+            <EditText
+                android:id="@+id/pubTopicET"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.22"
+                android:ems="10"
+                android:text="@string/default_port"
+                android:textColorHint="#EEE0E5"
+                android:textColor="#fff"
+                android:layout_marginRight="20dp"
+
+                android:inputType="text" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ButtonGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/sendGroup"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/connectButton"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cleanSessionGroup"
+                android:layout_gravity="center"
+                android:text="Save Configuration"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:background="#0000ff"
+
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

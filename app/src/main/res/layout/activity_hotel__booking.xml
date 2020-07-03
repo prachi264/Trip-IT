@@ -1,0 +1,205 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hotelsbackground"
+    tools:context=".Hotel_Booking">
+
+
+    <TextView
+        android:id="@+id/htl_book_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/bangers"
+        android:gravity="center"
+        android:text="Booking Details"
+        android:textSize="40sp"
+        android:textStyle="bold"></TextView>
+
+
+    <TextView
+        android:id="@+id/htl_cust_name"
+        android:layout_width="189dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/htl_book_head"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:text="Hotel Name"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/htl_disp_cust_name"
+        android:layout_width="189dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/htl_book_head"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/htl_cust_name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/htl_cust_mno"
+        android:layout_width="189dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/htl_cust_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:text="City"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/htl_disp_cust_mno"
+        android:textColor="@color/white"
+        android:layout_width="189dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/htl_disp_cust_name"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/htl_cust_mno"
+        android:inputType="textPersonName" />
+
+
+    <TextView
+        android:id="@+id/htl_cust_gender"
+        android:layout_width="189dp"
+        android:layout_height="45dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/htl_cust_mno"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="No of Customers"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/htl_disp_cust_gender"
+        android:layout_width="189dp"
+        android:layout_height="45dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/htl_disp_cust_mno"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/htl_cust_gender"
+        android:inputType="textPersonName" />
+
+
+    <TextView
+        android:id="@+id/htl_checkin"
+        android:layout_width="189dp"
+        android:layout_height="45dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/htl_cust_gender"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Room Count"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/htl_disp_checkin"
+        android:layout_width="189dp"
+        android:layout_height="45dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/htl_disp_cust_gender"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/htl_checkin"
+        android:inputType="textPersonName" />
+
+
+    <TextView
+        android:id="@+id/htl_checkout"
+        android:layout_width="189dp"
+        android:layout_height="45dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/htl_checkin"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Chek In"
+        android:textSize="20sp">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/htl_hotelname"
+        android:layout_width="189dp"
+        android:layout_height="45dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/htl_checkin"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="99dp"
+        android:text="Check Out"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/htl_disp_checkout"
+        android:layout_width="189dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/htl_disp_checkin"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/htl_checkout"
+        android:inputType="textPersonName" />
+
+
+    <TextView
+        android:id="@+id/htl_disp_hotelname"
+        android:layout_width="189dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/htl_disp_checkin"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/htl_checkout"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/back_hotel"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/htl_checkout"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="133dp"
+        android:textColor="@color/white"
+        android:background="#858f9e"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/book_hotel"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/htl_disp_checkout"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:background="#858f9e"
+        android:onClick="btnClick"
+        android:layout_toRightOf="@+id/back_hotel"
+        android:text="Book" />
+
+
+</RelativeLayout>
+
+
+
+
+

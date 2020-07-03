@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main"
+    tools:context=".About_Us">
+
+    <!-- set layout for slider -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_centerInParent="true"
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.viewpager.widget.ViewPager>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="412dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center_horizontal"
+        android:text="About Us"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="27dp"
+        app:fontFamily="@font/sahitya" />
+
+    <TextView
+        android:layout_width="349dp"
+        android:layout_height="63dp"
+        android:text="It's Your World
+We'll Help You Explore It"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:fontFamily="@font/sahitya" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="142dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Dedicated to making travel as simple as possible, we help each and every one of them find the best options across flights, hotels and car hire to book the perfect trip.We know you're looking for the best prices and most flexibilty to choose what's right for you. Which is why we're always hard at work making sure our app is super straightforward and speedy."
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:fontFamily="@font/sahitya" />
+
+    <ImageView
+        android:id="@+id/simpleImageView"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+
+        android:src="@drawable/earth" />
+
+    <TextView
+        android:layout_width="279dp"
+        android:layout_height="172dp"
+        android:layout_gravity="center"
+        android:text="
+For any type of flight queries, call our call centre on
+1800 2100 999"
+        app:fontFamily="@font/sahitya"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+
+</LinearLayout>

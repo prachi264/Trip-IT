@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="100"
+    android:background="@drawable/hotelsbackground"
+    android:orientation="vertical"
+    tools:context=".HotelBookingMain">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="05"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Hotels"
+        android:textColor="@color/white"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="30sp"
+        app:fontFamily="@font/bangers" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="20"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:fontFamily="@font/bangers"
+            android:gravity="center"
+            android:text="City"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <Spinner
+            android:id="@+id/city_spinner"
+            android:layout_width="149dp"
+            android:layout_gravity="center"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.498" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="vertical"
+        android:weightSum="100"
+
+        >
+
+
+        <LinearLayout
+
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+
+            <TextView
+
+                android:id="@+id/check_in"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+
+
+                android:gravity="center"
+                android:text="Check in"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/antic"/>
+
+            <Button
+                android:id="@+id/D1"
+                style="@android:style/Widget.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:layout_weight="14"
+                android:autoLink="phone"
+                android:gravity="center|top"
+                android:onClick="setCheckInDate"
+                android:text="Date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textStyle="bold|italic" />
+
+
+            <TextView
+
+                android:id="@+id/check_out"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/ci"
+                android:layout_weight="35"
+
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Check out"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/antic" />
+
+            <Button
+                android:id="@+id/D2"
+                style="@android:style/Widget.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_weight="14"
+                android:gravity="center"
+                android:text="Date"
+                android:onClick="setCheck_out_date"
+                android:textColor="#000000"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/date1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="50" />
+
+            <TextView
+                android:id="@+id/date2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <TextView
+
+            android:id="@+id/room"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+
+            android:fontFamily="@font/antic"
+            android:gravity="bottom|center_horizontal|fill_vertical"
+            android:padding="3dp"
+            android:text="Room"
+
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/room_quantity"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="30"
+            android:fontFamily="@font/bangers"
+            android:gravity="center"
+            android:hint="No.of rooms"
+            android:inputType="number"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="15sp" />
+
+        <TextView
+
+            android:id="@+id/person"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Person"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/antic" />
+
+        <EditText
+            android:id="@+id/guesst_count"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="30"
+            android:fontFamily="@font/bangers"
+            android:gravity="center"
+            android:hint="guesst Count"
+            android:inputType="number"
+            android:textSize="15sp"
+            app:fontFamily="@font/bangers" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSearchCity"
+        style="@android:style/Widget.Button"
+        android:layout_width="105dp"
+        android:layout_height="9dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="05"
+        android:onClick="confirm"
+        android:text="Search"
+        android:textSize="12sp" />
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<resources>
+
+
+    <string name="app_name">Memory Maker</string>
+    <string name="country_prompt">Choose a country</string>
+
+    <string-array name="country_arrays">
+        <item>Mumbai</item>
+        <item>Pune</item>
+        <item>Nashik</item>
+        <item>Nagpur</item>
+        <item>Kolhapur</item>
+        <item>Aurangabad</item>
+
+
+    </string-array>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="date_label_set">Press the button to set the date</string>
+    <string name="date_button_set">Set Date</string>
+    <string name="date_view_set">The Date is: </string>
+    <string name="date_selected"></string>
+
+
+    <!-- Setting Variables-->
+    <string name="setting_heading">Enter the Ip</string>
+    <string name="hotel_id">Hotel Ip</string>
+    <string name="flight_id">Flight Ip</string>
+    <string name="cab_id">CAB Ip</string>
+    <string name="default_port">80</string>
+    <string name="default_address">192.168.1.105</string>
+    <string name="title_activity_flight_search">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+</resources>
+
+

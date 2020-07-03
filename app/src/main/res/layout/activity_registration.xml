@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    tools:context=".Registration">
+
+
+    <TextView
+        android:id="@+id/travel_regi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Registration"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/bangers"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/travel_cust_name"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/travel_regi"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Name"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/travel_disp_cust_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/travel_regi"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/travel_cust_name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/travel_cust_mno"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/travel_cust_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Mobile No."
+        android:textSize="20sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/travel_disp_cust_mno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/travel_disp_cust_name"
+        android:maxLength="10"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/travel_cust_mno"
+        android:inputType="phone" />
+
+
+    <TextView
+        android:id="@+id/travel_cust_email"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/travel_cust_mno"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Email"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/travel_disp_cust_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/travel_disp_cust_mno"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/travel_cust_email"
+        android:inputType="textWebEmailAddress|textEmailAddress" />
+
+
+    <TextView
+        android:id="@+id/travel_cust_gender"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/travel_cust_email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Gender"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/travel_disp_cust_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/travel_disp_cust_email"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/travel_cust_gender"
+        android:inputType="textPersonName" />
+
+
+    <TextView
+        android:id="@+id/travel_cust_age"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/travel_cust_gender"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="DOB"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/travel_disp_cust_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/travel_disp_cust_gender"
+        android:hint="dd/m/yyyy"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/travel_cust_age"
+         />
+
+
+
+    <TextView
+        android:id="@+id/travel_cust_addr"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/travel_cust_age"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Address"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/travel_disp_cust_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/travel_disp_cust_age"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/travel_cust_addr"
+        android:inputType="textPersonName" />
+
+
+
+    <TextView
+        android:id="@+id/travel_username"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/travel_cust_addr"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="23dp"
+        android:text="Set Username"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/travel_disp_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/travel_disp_cust_addr"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/travel_username"
+        android:inputType="textPersonName" />
+
+
+    <TextView
+        android:id="@+id/travel_password"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/travel_username"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Set Password"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/travel_disp_set_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/travel_disp_username"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/travel_password"
+
+        android:ems="10"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/Sign_Up"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/travel_disp_set_password"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@+id/login"
+        android:onClick="getRegistration"
+        android:text="Sign Up" />
+
+
+</RelativeLayout>
+
+
+

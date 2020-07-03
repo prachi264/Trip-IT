@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context=".Login">
+
+
+    <TextView
+        android:id="@+id/travel_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Login"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/bangers"/>
+
+    <TextView
+        android:id="@+id/travel_username"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/travel_login"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Username"
+        android:textSize="20sp">
+
+    </TextView>
+
+
+
+
+    <EditText
+        android:id="@+id/travel_disp_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/travel_login"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/travel_username"
+         />
+
+
+    <TextView
+        android:id="@+id/travel_password"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/travel_username"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Password"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+
+
+    <EditText
+        android:id="@+id/travel_disp_set_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/travel_disp_username"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/travel_password"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/travel_password"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:onClick="loginData"
+        android:text="Login" />
+
+
+    <Button
+        android:id="@+id/travel_regi"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:text="Register" />
+
+
+</RelativeLayout>
+
+
+
